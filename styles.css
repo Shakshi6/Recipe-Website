@@ -1,0 +1,186 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    height:100%;
+    width:100%;
+    overflow:none;
+    background-color: #FFDEE9;
+    background-color: #f1d9f1;
+    background-image: linear-gradient(0deg, #f1d9f1 0%, #af5172 100%);
+
+
+}
+.navcontainer{
+    width:100vw;
+    /* background-color: #d9b0e8; */
+
+    /* The below color is from website "https://cssgradient.io/gradient-backgrounds/" */
+    background-color: #a60739;
+    background-image: linear-gradient(62deg, #a60739 0%, #E0C3FC 100%);
+
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+nav{
+    width: 100%;
+    padding: 0.7rem ;
+}
+
+#navlist{
+    width: 100%;
+    /* margin-left: 15px;
+    margin-right:15px */
+    list-style:none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    
+}
+
+#navlogo{
+     font-size: 2.8rem;
+     color: azure;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+#navitems{
+    display: flex;
+    gap: 40px;
+}
+
+.footerbox{
+    background-color: #8EC5FC;
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+    background-color: #2ca7c1;
+    background-color: #2ca7c1;
+    background-color: #a60739;
+    background-image: linear-gradient(62deg, #a60739 0%, #E0C3FC 100%);
+
+
+
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerbox p{
+    color: azure;
+    font-size: 2rem;
+}
+
+.contentbox{
+    width:50%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 1px 0px 30px black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rightbox{
+    position: relative;
+    overflow:visible;
+    transition:all 0.3s linear 0s ;
+    filter: drop-shadow(1px 1px 10px black);
+    border-radius: 20px;
+}
+
+.rightbox img{
+    height: 400px;
+    border-radius: 20px;
+    transition: all 0.6s linear 0s;
+}
+
+.rightbox:hover{
+    transform:scale(1.1);
+}
+
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 25px;
+}
+
+.leftbox h3{
+    font-size: 20px;
+}
+
+.ingbox{
+    font-size: 1.3rem;
+}
+
+.recipebox{
+    font-size: 1.1rem;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(43, 42, 42, 0.713);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox:hover .overlay{
+    opacity:1;
+}
+
+
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.left .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(43, 42, 42, 0.713);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.leftbox:hover .overlay{
+    opacity:1;
+}
+
+
+.leftbox .overlay span{
+    color: white;
+    font-size: 1.2rem;
+}
